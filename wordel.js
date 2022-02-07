@@ -1,5 +1,5 @@
 exports.handler = function(context, event, callback) {
-	let twiml = new Twilio.twiml.MessagingResponse();
+    let twiml = new Twilio.twiml.MessagingResponse();
     let incomingMessage = event.Body.toLowerCase();
     incomingMessage = incomingMessage.trim();
     var Typo = require("typo-js");
